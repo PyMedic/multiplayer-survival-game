@@ -50,5 +50,5 @@ func update_animation(direction: Vector2):
 		else:
 			sprite.play("idle_right")
 
-            # If the last direction was to the left, the flip the idle_right animation.
+			# If the last direction was to the left, the flip the idle_right animation.
 			sprite.flip_h = last_direction.x < 0
