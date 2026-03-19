@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Multiplayer-Survival-Game"
-run/main_scene="uid://bof7ou3mxpv81"
+run/main_scene="uid://seworxwb8ahl"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
