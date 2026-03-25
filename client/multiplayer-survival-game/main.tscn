@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://seworxwb8ahl"]
 
 [ext_resource type="PackedScene" uid="uid://dc63gb0janmwd" path="res://main_world.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bk6hhl0ygjv2f" path="res://game_manager.tscn" id="2_0xm2m"]
 
 [node name="Main" type="Node2D" unique_id=1517795432]
+
+[node name="GameManager" parent="." unique_id=1423454412 instance=ExtResource("2_0xm2m")]
 
 [node name="MainWorld" parent="." unique_id=1723589587 instance=ExtResource("1_ig7tw")]
 
