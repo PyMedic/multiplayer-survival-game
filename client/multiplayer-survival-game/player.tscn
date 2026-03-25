@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bof7ou3mxpv81"]
 
 [ext_resource type="Texture2D" uid="uid://0dlauho4uul" path="res://assets/images/tilesets/characters/Player/Player.png" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://cc04wrxbg7yl7" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://cc04wrxbg7yl7" path="res://Player.gd" id="1_onrkg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -290,16 +290,19 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4flbx"]
 radius = 5.0
-height = 18.0
+height = 20.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1239112921]
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=194647393]
-position = Vector2(79, 59)
+position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_sh265")
 animation = &"walk_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=361510455]
-position = Vector2(79, 56)
+position = Vector2(0, -2)
+scale = Vector2(0.9, 0.9)
 shape = SubResource("CapsuleShape2D_4flbx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=348463224]
