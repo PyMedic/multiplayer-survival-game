@@ -8,3 +8,4 @@
 [node name="MainWorld" parent="." unique_id=1723589587 instance=ExtResource("1_ig7tw")]
 
 [node name="Player" parent="." unique_id=1239112921 instance=ExtResource("2_0xm2m")]
+position = Vector2(54, 53)
