@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://seworxwb8ahl"]
 
-[ext_resource type="Script" uid="uid://bd6heb51q41w5" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://bk6hhl0ygjv2f" path="res://game_manager.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bd6heb51q41w5" path="res://Main.gd" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://bk6hhl0ygjv2f" path="res://GameManager.tscn" id="2_r0du0"]
 
 [node name="Main" type="Node2D" unique_id=1517795432]
-script = ExtResource("1_0xm2m")
+script = ExtResource("1_uu6xs")
 
 [node name="Players" type="Node2D" parent="." unique_id=767666501]
 
@@ -14,4 +14,4 @@ script = ExtResource("1_0xm2m")
 
 [node name="Managers" type="Node" parent="." unique_id=1100789032]
 
-[node name="GameManager" parent="Managers" unique_id=1423454412 instance=ExtResource("2_0xm2m")]
+[node name="GameManager" parent="Managers" unique_id=1423454412 instance=ExtResource("2_r0du0")]

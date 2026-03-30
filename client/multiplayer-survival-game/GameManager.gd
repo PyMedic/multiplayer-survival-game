@@ -3,7 +3,7 @@ extends Node
 # Get the Players container node from the Main scene.
 @onready var players_container = $"../Players"
 
-const PLAYER_SCENE = preload("res://player.tscn")
+const PLAYER_SCENE = preload("res://Player.tscn")
 
 # Store the current player(s)
 # key: peer_id, value: player node
