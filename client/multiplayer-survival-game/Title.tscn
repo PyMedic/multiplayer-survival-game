@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bu8bx2do4as4l"]
+
+[node name="Title" type="Control" unique_id=688917895]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="." unique_id=1078563898]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameMenu" type="VBoxContainer" parent="." unique_id=1534470759]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="GameMenu" unique_id=1096117845]
+layout_mode = 2
+text = "Multiplayer Game Ttile"
+
+[node name="HostButton" type="Button" parent="GameMenu" unique_id=91398615]
+layout_mode = 2
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="GameMenu" unique_id=514486453]
+layout_mode = 2
+text = "Join"
