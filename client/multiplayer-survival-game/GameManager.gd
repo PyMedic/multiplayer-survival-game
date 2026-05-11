@@ -1,7 +1,8 @@
 extends Node
 
-# Get the Players container node from the Main scene.
-@onready var players_container = $"../Players"
+# Assigned by Main.gd.
+# This stores the Players node where player instances are added.
+var players_container: Node = null
 
 const PLAYER_SCENE = preload("res://Player.tscn")
 
@@ -16,7 +17,7 @@ func _ready():
 
 	# Multiplayer event handling
 	multiplayer.peer_connected.connect(_on_peer_connected)
-	multiplayer.peer_disconnected.connect(_on_peer_connected)
+	multiplayer.peer_disconnected.connect(_on_peer_disconnected)
 	multiplayer.connected_to_server.connect(_on_connected_to_server)
 	multiplayer.connection_failed.connect(_on_connection_failed)
 	multiplayer.server_disconnected.connect(_on_server_disconnected)
@@ -80,7 +81,7 @@ func remove_player(peer_id: int):
 	var player = spawned_players[peer_id]
 	# Safely delete this player.
 	player.queue_free()
-	spawned_players.erase[peer_id]
+	spawned_players.erase(peer_id)
 
 	print("Removed the player with peer_id: ", peer_id)
 
