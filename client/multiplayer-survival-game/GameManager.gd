@@ -61,6 +61,8 @@ func spawn_player(peer_id: int, is_local: bool):
 		return
 
 	var player = PLAYER_SCENE.instantiate()
+	
+	player.is_local_player = is_local
 	player.name = str(peer_id)
 	player.global_position = Vector2(100 + peer_id * 50, 100)
 

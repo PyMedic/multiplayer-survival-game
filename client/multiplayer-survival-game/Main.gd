@@ -52,7 +52,13 @@ func _on_server_chosen(ip: String):
 
 func _on_singleplayer_selected():
 	title_instance.queue_free()
+	
+	# Load the MainWorld scene.
+	var world_scene = preload("res://MainWorld.tscn")
+	var world_instance = world_scene.instantiate()
+	game_world.add_child(world_instance)
 
+	# Create GameManager
 	var gm_scene = preload("res://GameManager.tscn")
 	var gm_instance = gm_scene.instantiate()
 	managers.add_child(gm_instance)
@@ -60,8 +66,8 @@ func _on_singleplayer_selected():
 	
 	print("_on_singleplayer_selected called.")
 
+	# Spawn local player.
 	gm_instance.spawn_player(gm_instance.multiplayer.get_unique_id(), true)
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

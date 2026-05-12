@@ -296,6 +296,7 @@ height = 20.0
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=194647393]
+z_index = 10
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_sh265")
 animation = &"walk_up"
