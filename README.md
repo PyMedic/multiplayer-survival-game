@@ -9,6 +9,23 @@ Players must gather resources, craft tools, survive freezing temperatures, and c
 - Real-time multiplayer gameplay
 - Survival mechanics (temperature, crafting, resource gathering)
 
+## How to Run the Game in Godot
+
+1. Install the Godot Engine.
+   - You can download it from https://godotengine.org/
+
+2. Launch the Godot Engine.
+
+3. Select `Import Existing Project`.
+
+4. Locate the project folder:
+   `<THIS_GIT_REPOSITORY>/client/multiplayer-survival-game`
+
+   Then click `Open`.
+   - When the `Import Existing Project` window appears, click `Import`.
+
+5. Once the project is loaded, click the triangle button (`Run Project`) in the top-right corner to start the game.
+
 ## Tech Stack
 ### Client
 - Godot (GDScript)
